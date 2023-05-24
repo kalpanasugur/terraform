@@ -58,7 +58,7 @@ resource "aws_instance" "connect" {
   ami           = "ami-0f8e81a3da6e2510a"
   instance_type = "t2.micro"
   subnet_id = aws_subnet.sub1.id
-  key_name   = "jenkinss"
+  key_name   = "keypair"
   tags = {
     Name = "first_instance"
   }
