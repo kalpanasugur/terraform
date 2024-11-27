@@ -55,7 +55,7 @@ resource "aws_internet_gateway" "first_ig" {
 }
 
 resource "aws_instance" "connect" {
-  ami           = "ami-0f8e81a3da6e2510a"
+  ami           = "ami-09e4ba81d75ebeb6a"
   instance_type = "t2.micro"
   subnet_id = aws_subnet.sub1.id
   key_name   = "itsai"
